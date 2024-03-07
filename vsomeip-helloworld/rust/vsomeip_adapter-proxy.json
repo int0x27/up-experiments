@@ -1,0 +1,31 @@
+{
+  "unicast": "192.168.100.105",
+  "netmask": "255.255.255.0",
+  "diagnosis": "0x1",
+  "logging": {
+    "level": "debug",
+    "console": "true",
+    "file": { "enable": "false", "path": "/var/log/vsomeip.log" },
+    "dlt": "false",
+    "version": { "enable": "false" },
+    "__status_log_interval": "60",
+    "statistics": {
+      "interval": "60",
+      "min-frequency": "5",
+      "max-messages": "10"
+    }
+  },
+  "applications": [
+    {
+      "name": "vsomeip_adapter",
+      "id": "0x5678"
+    }
+  ],
+  "routing": "vsomeip_adapter",
+  "service-discovery": {
+    "enable": "true",
+    "multicast": "239.0.0.1",
+    "port": "30490",
+    "protocol": "udp"
+  }
+}

@@ -62,7 +62,7 @@ target_include_directories(hello_service
     ${vsomeip3_SOURCE_DIR}/implementation/utility/include
 )
 
-# add_subdirectory(vsomeip_adapter)
+add_subdirectory(vsomeip_adapter)
 
 add_executable(hello_client
     hello_client.cc

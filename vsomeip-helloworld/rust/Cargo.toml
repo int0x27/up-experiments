@@ -1,0 +1,16 @@
+[package]
+name = "vsomeip_adapter"
+version = "0.1.0"
+authors = ["Ivan Kirchev"]
+edition = "2018"
+build = "build.rs"
+
+[dependencies]
+log = "0.4"
+env_logger = "0.11.3"
+ctrlc = "3.4"
+lazy_static = "1.4.0"
+
+[[bin]]
+name = "rust_vsomeip_adapter"
+path = "src/main.rs"
